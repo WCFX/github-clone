@@ -1,28 +1,24 @@
  import React from 'react';
 
- import { Container } from './styles';
- import { FaGithub } from 'react-icons/fa';
+ import { Container, GithubLogo, SearchForm, Navbar } from './styles';
+ import SearchKeySlash from '../../assets/search-key-slash.svg';
 
  const Header: React.FC = () => (
    <>
     <Container>
-      <form>
-        <FaGithub
-          size={32}
-        />
-        <input
-          type="text"
-          placeholder="Search or Jump to..."
-        />
-      </form>
-      <nav>
+      <SearchForm>
+        <GithubLogo/>
+        <input type="text" placeholder="Search or Jump to..." />
+        <img src={SearchKeySlash} />
+      </SearchForm>
+       <Navbar>
         <ul>
           <li>Pulls</li>
           <li>Issues</li>
           <li>Marketplace</li>
           <li>Explore</li>
         </ul>
-      </nav>
+      </Navbar>
     </Container>
    </>
  )
