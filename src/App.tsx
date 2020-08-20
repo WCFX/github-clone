@@ -11,11 +11,11 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-          <Route>
+          <Routes>
             <Route path="/"  element={<Profile />} />
             <Route path="/:username" element={<Profile />} />
             <Route path="/:username/:reponame" element={<Repo />} />
-          </Route>
+          </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
       <GlobalStyles />

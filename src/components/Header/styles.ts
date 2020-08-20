@@ -53,7 +53,6 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 5px;
   margin-left: 10px;
 
   > ul {
@@ -62,6 +61,7 @@ export const Navbar = styled.nav`
     > li {
       flex-direction: row;
       padding: 5px;
+      font-size: 0.9rem;
       cursor: pointer;
       font-weight: 500;
       color: var(--primary)

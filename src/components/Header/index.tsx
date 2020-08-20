@@ -9,7 +9,7 @@
       <SearchForm>
         <GithubLogo/>
         <input type="text" placeholder="Search or Jump to..." />
-        <img src={SearchKeySlash} />
+        <img src={SearchKeySlash} alt="logo-github"/>
       </SearchForm>
        <Navbar>
         <ul>
