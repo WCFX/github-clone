@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Header />
           <Routes>
-            <Route path="/"  element={<Profile />} />
+            <Route path="/" element={<Profile />} />
             <Route path="/:username" element={<Profile />} />
             <Route path="/:username/:reponame" element={<Repo />} />
           </Routes>
